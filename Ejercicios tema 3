@@ -1,0 +1,33 @@
+
+package openbootcamp;
+
+
+public class OpenBootcamp {
+
+    
+    public static void main(String[] args) {
+        
+        System.out.println(Suma(10, 20, 15));
+        
+    }
+    
+    public static int Suma(int a, int b, int c){
+        return a+b+c;
+    }
+    
+}
+
+class coche{
+    public int puertas=0;
+    
+    public static void main(String[] args) {
+        coche miCoche= new coche();
+        miCoche.MasPuertas();
+        System.out.println(miCoche.puertas);
+    }
+    
+    public void MasPuertas(){
+        this.puertas++;
+    }
+}
+
