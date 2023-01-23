@@ -1,0 +1,36 @@
+
+package openbootcamp;
+
+
+public class Ejercicio_tema_9 {
+    public static void main(String[] args) {
+        Cliente cl = new Cliente();
+        cl.edad=25;
+        cl.nombre="Noam Mendoza";
+        cl.telefono="12345678";
+        cl.credito=10000;
+        
+        System.out.println("Edad: "+cl.edad+" años.\n Nombre: "+cl.nombre+"\n Telefono: "+cl.telefono+"\n Credito: $"+cl.credito+"\n");
+        
+        Trabajador tr = new Trabajador();
+        tr.edad=18;
+        tr.nombre="Alfredo Maturin";
+        tr.telefono="5462316786";
+        tr.salario=20000;
+        System.out.println("Edad: "+tr.edad+" años.\n Nombre: "+tr.nombre+"\n Telefono: "+tr.telefono+"\n Credito: $"+tr.salario);
+    }
+ 
+}
+
+class Persona{
+    int edad;
+    String nombre, telefono;
+}
+
+class Cliente extends Persona{
+    int credito;
+}
+
+class Trabajador extends Persona{
+    int salario;
+}
